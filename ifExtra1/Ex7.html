@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex7</title>
+</head>
+<body>
+<script>
+    let phoneTime = Number(prompt("total phone call time in minute"));
+    let payMoney;
+
+    if (phoneTime <= 1) {
+        payMoney = phoneTime * 1600;
+    } else if (phoneTime <= 5) {
+        payMoney = 1600 * 1 + (phoneTime - 1) * 800;
+    } else if (phoneTime <= 10) {
+        payMoney = 1600 * 1 + 800 * 4 + (phoneTime - 5) * 400;
+    } else {
+        payMoney = 1600 * 1 + 800 * 4 + 400 * 5 + (phoneTime - 10) * 200;
+    }
+    alert("total money you have to pay = " + payMoney + " VND");
+</script>
+</body>
+</html>

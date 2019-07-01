@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex6</title>
+</head>
+<body>
+<script>
+    let revenue = parseInt(prompt("Enter the revenue in USD"));
+    let bonusMoney;
+    if (revenue > 10000) {
+        bonusMoney = revenue * 0.1 / 100;
+    } else if (revenue > 5000) {
+        bonusMoney = revenue * 0.05 / 100;
+    } else if (revenue > 1000) {
+        bonusMoney = revenue * 0.01 / 100;
+    } else {
+        bonusMoney = 0;
+    }
+    alert("total bonus money is = " + bonusMoney + " USD");
+</script>
+</body>
+</html>
